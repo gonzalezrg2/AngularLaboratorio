@@ -12,14 +12,23 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
+import { Layout1Component } from './layouts/layout1/layout1.component';
+import { GrillasComponent } from './pages/grillas/grillas.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     GraficosComponent,
-    MyDashboardComponent
+    MyDashboardComponent,
+    Layout1Component,
+    GrillasComponent,
+    NavbarComponent
   ],
   imports: [
+    // Importamos el módulo de material
+    MaterialModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
