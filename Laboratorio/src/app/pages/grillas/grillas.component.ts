@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grillas.component.scss']
 })
 export class GrillasComponent implements OnInit {
+  dtOptions: DataTables.Settings = {};
 
   constructor() { }
 
   ngOnInit() {
+    this.dtOptions = {
+      pagingType: 'full_numbers',
+      responsive: true
+    };
   }
 
 }

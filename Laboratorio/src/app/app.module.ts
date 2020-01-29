@@ -17,6 +17,9 @@ import { GrillasComponent } from './pages/grillas/grillas.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MaterialModule } from './material/material.module';
 
+// DataTable Angular
+import { DataTablesModule } from 'angular-datatables';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +40,9 @@ import { MaterialModule } from './material/material.module';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    LayoutModule
+    LayoutModule,
+    // Datatable Angular
+    DataTablesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
